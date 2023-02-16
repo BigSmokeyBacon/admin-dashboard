@@ -1,3 +1,9 @@
+:root {
+  box-sizing: border-box;
+}
+body {
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -95,6 +101,30 @@
   text-overflow: ellipsis;
 }
 
-.announcements > h2 {
+.announcements > h2,
+.trending > h2 {
   margin-bottom: 30px;
+}
+
+.trending .content div img {
+  height: 50px;
+}
+.trending-user--1,
+.trending-user--2,
+.trending-user--3,
+.trending-user--4 {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+span {
+  display: block;
+  margin: 4px;
+}
+
+span[class="user"] {
+  color: red;
+}
+span[class="desc"] {
+  color: blue;
 }
