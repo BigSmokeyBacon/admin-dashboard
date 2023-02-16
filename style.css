@@ -1,0 +1,23 @@
+.container {
+  display: grid;
+  width: 100vh;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
+}
+
+.header {
+  background-color: royalblue;
+  height: 100px;
+  grid-column: 2 / 3;
+}
+
+.main {
+  background-color: blueviolet;
+  /* grid-column: 2 / 3;
+  grid-row: 2 / 3; */
+}
+
+.sidebar {
+  background-color: crimson;
+  grid-row: 1 / 3;
+}
